@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+<!-- CharteGraphiqueSite-->
+<head>
+    <meta chartset = "UTF-8">
+    <title>bancdeTPthermique</title>  <!--le titre dans l'onglet internet-->
+    <link rel="stylesheet" href="CharteGraphiqueSite.css">
+    <link rel="icon" href="ICAM.png">  <!--l'icône dans l'onglet internet-->
+    
+    <!-- commandes bouttons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<!-- Corp du site-->
+<body>
+  <header>
+    <table style="width: 100%;">
+        <tr>
+            <td>         
+              <p class = "tp">Banc de TP thermique à ailette</p>
+            </td>
+        </tr>
+    </table>
+  </header>
+<!-- barre de navigation-->
+    <nav>
+
+        <a class="styled" href="AccueilSite.html">Accueil</a>
+        <a class="styled" href="documentation technique.html">Documentation technique</a> 
+        <a class="styled" href="Tableaudebord.html">Tableau de bord</a>   
+        <a class="styled" href="PageProduits.php"> déroulé du TP</a>     
+       
+    </nav>
+   
+        <!-- partie de la doc 2D -->
+    <div class="container">
+        <p class = "titre">Documentation 2D</p>
+        <p class = "text"> ci-dessous tout la documentation 2D du banc de TP</p>
+        <div class="panel-group" id="accordion">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Plan 2D afficheur</a>
+              </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <BLOCKQUOTE class = "text">- Plan de l'ailette.<br></BLOCKQUOTE>
+                <p align = "center">
+                <img src="PLAN 2D\2D Afficheur.PNG"> </img>
+                </p>
+              </div>
+            </div>
+          </div>
+<!-- les boutons qui se collapsent-->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Plan 2D alimentation 5V</a>
+              </h4>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p align = "center">
+                    <iframe src="PLAN 2D\2D Alimentation 5V.pdf" width="100%" height="800px"> </iframe>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">2D Alimentation 12V</a>
+              </h4>
+            </div>
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D\2D Alimentation 12V.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">2D bouton ON OFF</a>
+                </h4>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <p align = "center">
+                        <img src="PLAN 2D/2D bouton ON OFF.PNG"> </img>
+                    </p>
+              </div>
+            </div>
+        </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">2D capteur DS18B20</a>
+                  </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                        <p align = "center">
+                            <img src="PLAN 2D/2D capteur DS18B20.PNG"> </img>
+                        </p>
+                  </div>
+                </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">2D structure banc</a>
+              </h4>
+            </div>
+            <div id="collapse6" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/2D Strucutre 1_2.pdf" width="85%" height="800px"> </iframe>
+                <iframe src="PLAN 2D/2D Strucutre 2_2.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">2D support du materiel electrique</a>
+              </h4>
+            </div>
+            <div id="collapse7" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/2D Support Elec.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">2D ailette</a>
+              </h4>
+            </div>
+            <div id="collapse8" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/Ailette.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">2D Assemblage banc TP ailette</a>
+              </h4>
+            </div>
+            <div id="collapse9" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/Assemblage banc TP ailette.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">2D Boitier arduino</a>
+              </h4>
+            </div>
+            <div id="collapse10" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/Boitier arduino.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">2D coque PVC</a>
+              </h4>
+            </div>
+            <div id="collapse11" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/coque PVC.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">2D Support capteurs</a>
+              </h4>
+            </div>
+            <div id="collapse12" class="panel-collapse collapse">
+              <div class="panel-body">
+                <iframe src="PLAN 2D/support capteur.pdf" width="85%" height="800px"> </iframe>
+              </div>
+            </div>
+          </div>
+
+<!-- partie SW-->
+          <div class="container">
+            <p class = "titre">Documentation SolidWorks</p>
+            <p class = "text"> Ici vous trouverez toute la documentation SolidWorks</p>
+            <div class="panel-group" id="accordion">
+    
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3D">Fichier SolidWorks</a>
+                  </h4>
+                </div>
+                <div id="collapse3D" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                        <p class = "titre">Documentation SolidWorks</p>
+                        <a href="https://drive.google.com/drive/folders/1tybq3OyvbmzFFR7W8ofeRE8m2KqB1--K?usp=share_link">Ici vous trouverez toute la documentation SolidWorks</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- partie elec-->
+            <div class="container">
+                <p class = "titre">Documentation electrique</p>
+                <p class = "text"> Ici vous trouverez toute la documentation electrique</p>
+                <div class="panel-group" id="accordion">
+        
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseelec">Documentation electrique</a>
+                      </h4>
+                    </div>
+                    <div id="collapseelec" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                            <p class = "titre">Documentation electrique</p>
+                            <div class="panel-body">
+                                <iframe src="PLAN 2D/schema.pdf" width="85%" height="800px"> </iframe>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        </div> 
+    </div>
+ 
+</body>
+
+</html>

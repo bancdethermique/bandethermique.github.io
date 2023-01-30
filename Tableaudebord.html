@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<!-- CharteGraphiqueSite-->
+<head>
+    <meta chartset = "utf-8">
+    <title>bancdeTPthermique</title>  <!--le titre dans l'onglet internet-->
+    <link rel="stylesheet" href="CharteGraphiqueSite.css">
+    <link rel="icon" href="ICAM.png">  <!--l'icône dans l'onglet internet-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<!-- Corp du site-->
+<body>
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td>         
+                    <p class = "tp">Banc de TP thermique à ailette</p>
+                </td>
+            </tr>
+
+        </table>
+    </header>
+    <!-- barre de navigation-->
+        <nav>
+
+        <a class="styled" href="AccueilSite.html">Accueil</a>
+        <a class="styled" href="documentation technique.html">Documentation technique</a> 
+        <a class="styled" href="Tableaudebord.html">Tableau de bord</a>   
+        <a class="styled" href="PageProduits.php"> déroulé du TP</a>
+                 
+           
+        </nav>
+
+
+        <div class="panel-group" id="accordion">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a>KPI et budgets  </a>
+                </h4>
+              </div>
+              <div class="container">
+                <div class="panel panel-default">
+                    <div style="position:absolute ; width:81%; height:100%; z-index:1; visibility: visible; ">
+                        <p align = "center"></p>
+                        <iframe name ="KPI" src="indicateurs.htm" scrolling="yes" height="100%" width="90%" align="center" frameborder="yes">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        
+        </div> 
+    </body>

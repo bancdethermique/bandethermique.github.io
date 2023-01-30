@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<!-- CharteGraphiqueSite-->
+<head>
+    <meta chartset = "utf-8">
+    <title>bancdeTPthermique</title>  <!--le titre dans l'onglet internet-->
+    <link rel="stylesheet" href="CharteGraphiqueSite.css">
+    <link rel="icon" href="ICAM.png">  <!--l'icône dans l'onglet internet-->
+    
+</head>
+<!-- Corp du site-->
+<body>
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td>         
+                    <p class = "tp">Banc de TP thermique à ailette</p>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <!-- barre de navigation-->
+        <nav>
+
+            <a class="styled" href="AccueilSite.html">Accueil</a>
+            <a class="styled" href="documentation technique.html">Documentation technique</a> 
+            <a class="styled" href="Tableaudebord.html">Tableau de bord</a>   
+            <a class="styled" href="PageProduits.php"> déroulé du TP</a>     
+           
+        </nav>
+    <!-- contenu divisé en plusieurs parties : text/image/text-->
+    <div class = "flex-container">
+
+        <!-- division contenu du text-->
+        <div>
+            <p class = "titre">Présentation du Banc de TP</p>
+            <p class = "text"> Ce banc de TP permet aux étudiants de comprendre le fonctionnement et l'utilité des dissipateurs thermiques,<br>
+                ici une ailette, lorsqu'ils sont placés sur une source de chaleur. <br>
+                Cela dans le but de consolider leur connaissance en conduction et en convection thermique<br>
+                
+                Principe de fonctionnement du banc : <br>
+                <!-- blockquote pour la tabulation et br pour fin de ligne-->
+                <BLOCKQUOTE class = "text">- une résistance chauffe par contact l'ailette pour atteindre 50 °C.<br></BLOCKQUOTE>
+                <BLOCKQUOTE class = "text">- 16 capteurs de température permettent de visualiser la propagation de la chaleur dans l'ailette.<br></BLOCKQUOTE>
+                <BLOCKQUOTE class = "text">- 1 capteur permet de relever la température ambiante pour étudier le phénomène de convection.<br>
+            </p>
+            
+        </div>
+
+        <!-- division contenu de l'image-->
+        <div>
+            <p class = "titre"> Représentation 3D et tableau de la nomenclature</p><br>
+            <div class="flex-containerimg">
+                <div>
+                    <img src="3DBancTPthermique.jpg" >
+                </div>
+                <div>   
+                    <img src="TableNomenclature.jpg" >
+                </div>
+            </div>
+        </div>
+
+         <!-- division contenu du text-->
+        <div>
+            <p class="titre">
+                Mise en route du banc de TP : <br>
+            </p>
+            <BLOCKQUOTE class = "text">- Etape 1 : Brancher le file dans la prise murale.<br></BLOCKQUOTE>
+            <BLOCKQUOTE class = "text">- Etape 2 : allumer le bouton ON/OFF.<br></BLOCKQUOTE>
+            <BLOCKQUOTE class = "text">- Etape 3 : attendre que le capteur 1 atteigne la température de 50°C.<br></BLOCKQUOTE>
+            <BLOCKQUOTE class = "text">- Etape 4 : démarrer l'éxercice du TP.<br></BLOCKQUOTE>
+            <BLOCKQUOTE class = "text">- Etape 5 : une fois les températures relevées, éteindre et débranhcer le banc.<br></BLOCKQUOTE>
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+
+</html>
