@@ -1,8 +1,8 @@
 <xml xmlns:o="urn:schemas-microsoft-com:office:office">
- <o:MainFile HRef="../indicateurs.html"/>
+ <o:MainFile HRef="../indicateurs.htm"/>
  <o:File HRef="stylesheet.css"/>
- <o:File HRef="tabstrip.html"/>
- <o:File HRef="sheet001.html"/>
+ <o:File HRef="tabstrip.htm"/>
+ <o:File HRef="sheet001.htm"/>
  <o:File HRef="image001.png"/>
  <o:File HRef="image002.png"/>
  <o:File HRef="image003.png"/>
@@ -15,8 +15,8 @@
  <o:File HRef="image010.png"/>
  <o:File HRef="image011.png"/>
  <o:File HRef="image012.png"/>
- <o:File HRef="sheet002.html"/>
- <o:File HRef="sheet003.html"/>
- <o:File HRef="sheet004.html"/>
+ <o:File HRef="sheet002.htm"/>
+ <o:File HRef="sheet003.htm"/>
+ <o:File HRef="sheet004.htm"/>
  <o:File HRef="filelist.xml"/>
 </xml>
