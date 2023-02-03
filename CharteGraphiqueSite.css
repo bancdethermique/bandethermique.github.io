@@ -87,3 +87,28 @@ nav {
 iframe{
     margin-left: 0px;
 }
+
+/*personnalisation des tableaux*/
+.tableau{
+    margin: auto;/*Pour centrer les tableau dans la pages*/
+    border: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    border-color: (white);
+    text-align: center;
+    width: auto;
+    background-color: lightgray;
+}
+
+table {
+    background-color: lightgray;
+    border-color: white;
+    
+  }
+
+td {
+    border: 1px solid white;
+    color : white;
+    width: 100px;
+    height: 50px;
+  }
