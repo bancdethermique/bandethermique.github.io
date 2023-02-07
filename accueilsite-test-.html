@@ -63,7 +63,8 @@
                         <script>
                                 function loadCSV() {
                                     var request = new XMLHttpRequest();
-                                    request.open("GET", "https://github.com/bancdethermique/bandethermique.github.io/blob/main/Nomenclature.csv", true);
+                                    request.open("GET", "https://raw.githubusercontent.com/bancdethermique/bandethermique.github.io
+/main/nomenclature.csv", true);
                                     request.onreadystatechange = function() {
                                     if (request.readyState === 4 && request.status === 200) {
                                         var data = request.responseText;
