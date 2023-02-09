@@ -100,15 +100,3 @@ iframe{
     background-color: lightgray;
 }
 
-table {
-    background-color: lightgray;
-    border-color: white;
-    
-  }
-
-td {
-    border: 1px solid white;
-    color : white;
-    width: 100px;
-    height: 50px;
-  }
