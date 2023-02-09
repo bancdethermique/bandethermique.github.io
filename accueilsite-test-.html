@@ -13,6 +13,7 @@
 </head>
 <!-- Corp du site-->
 <body>
+    <!-- en-tête du site-->
     <header>
         <table style="width: 100%;">
             <tr>
@@ -58,7 +59,8 @@
                     <img src="3DBancTPthermique.jpg" >
                 </div>
                 <div>                                 
-                    <div id="tableau"></div>    
+                    <div id="tableau"></div>  
+                    <!-- Javascript pour afficher le tableau de la BD csv-->
                                      <script>
                                           function readCSV() {
                                             var request = new XMLHttpRequest();
@@ -93,10 +95,7 @@
                                       </head>
                                       <body onload="readCSV()">
                                         <div id="table"></div>
-                                      </body>
-                            
-                    
-
+                                      </body>   
                 </div>
             </div>
         </div>
