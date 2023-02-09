@@ -1,3 +1,6 @@
+<!--Cette page contient le code php pour récupérer les données de la Bd + le code html de la page team-->
+
+
 <!DOCTYPE html>
 
 <html>
@@ -7,16 +10,16 @@
     <title>bancdeTPthermique</title>  <!--le titre dans l'onglet internet-->
     <link rel="stylesheet" href="CharteGraphiqueSite.css">
     <link rel="icon" href="ICAM.png">  <!--l'icône dans l'onglet internet-->
-    
 </head>
 <!-- Corp du site-->
 <body>
+    <!-- en-tête du site-->
     <header>
         <table style="width: 100%;">
             <tr>
-                <td>         
+                         
                     <p class = "tp">Banc de TP thermique à ailette</p>
-                </td>
+                
             </tr>
         </table>
     </header>
@@ -26,7 +29,7 @@
             <a class="styled" href="AccueilSite.html">Accueil</a>
             <a class="styled" href="documentation technique.html">Documentation technique</a> 
             <a class="styled" href="Tableaudebord.html">Tableau de bord</a>   
-            <a class="styled" href="PageProduits.php"> déroulé du TP</a>     
+            <a class="styled" href="ajouterdeselements.php">ajouter des elements</a>     
            
         </nav>
     <!-- contenu divisé en plusieurs parties : text/image/text-->
@@ -55,8 +58,44 @@
                 <div>
                     <img src="3DBancTPthermique.jpg" >
                 </div>
-                <div>   
-                    <img src="TableNomenclature.jpg" >
+                <div>                                 
+                    <div id="tableau"></div>  
+                    <!-- Javascript pour afficher le tableau de la BD csv-->
+                                     <script>
+                                          function readCSV() {
+                                            var request = new XMLHttpRequest();
+                                            request.open("GET", "Nomenclature.csv", true);
+                                            request.send();
+                                            request.onreadystatechange = function() {
+                                              if (request.readyState === 4 && request.status === 200) {
+                                                var csvData = request.responseText;
+                                                var data = [];
+                                                var rows = csvData.split("\n");
+                                                for (var i = 0; i < rows.length; i++) {
+                                                  data.push(rows[i].split(","));
+                                                }
+                                                displayTable(data);
+                                              }
+                                            };
+                                          }
+
+                                          function displayTable(data) {
+                                            var table = "<table border='1'>";
+                                            for (var i = 0; i < data.length; i++) {
+                                              table += "<tr>";
+                                              for (var j = 0; j < data[i].length; j++) {
+                                                table += "<td>" + data[i][j] + "</td>";
+                                              }
+                                              table += "</tr>";
+                                            }
+                                            table += "</table>";
+                                            document.getElementById("table").innerHTML = table;
+                                          }
+                                        </script>
+                                      </head>
+                                      <body onload="readCSV()">
+                                        <div id="table"></div>
+                                      </body>   
                 </div>
             </div>
         </div>
