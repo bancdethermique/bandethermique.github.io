@@ -1,3 +1,16 @@
+@media screen and (max-width: 640px) {
+  /* Styles spécifiques pour les écrans de smartphone */
+  body {
+    font-size: 16px;
+  }
+  .header {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
 body {
     background-image: url(elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
     background-size: cover;
